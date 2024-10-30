@@ -1,0 +1,164 @@
+.dwpl-main {
+    margin: 7% 2%;
+    border: 1px solid #dddddd;
+    padding: 12px 35px;
+    postion: relative;
+}
+.dwpl-main input{
+	width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border: 1px solid #ecf0f1;
+    background: #ecf0f1;
+    padding: 5px;
+    display: inline-block !important;
+    visibility: visible !important;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border: 1px solid #f1f1f1;
+    background: #ecf0f1;
+    padding: 5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+.dwpl-main h2 {
+    padding: 3px 0;
+    margin: 30px 0;
+}
+.frm-date {
+    float: left;
+    display: inline;
+    width: 45%;
+    margin-right: 2%;
+}
+.sbmt-date {
+    margin: 35px 0;
+}
+.sbmt-date span {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background: #f7f7f7;
+    text-shadow: none;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: normal;
+    color: #0073aa;
+    cursor: pointer;
+    outline: 0;
+}
+.to-date {
+    display: inline-block;
+    width: 45%;
+}
+.frm-date span{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+.to-date span{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+.result-block.dwpl-output table {
+    width: 100%;
+    border: 1px solid #dddddd;
+    padding: 25px;
+    display: table;
+}
+.result-block.dwpl-output table tr td {
+    padding: 4px 4px;
+}
+.result-block.dwpl-output table thead th {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px 0px;
+}
+a.csv-icon {
+    background-image: url(../image/csv.png);
+    background-repeat: round;
+    display: inline-block;
+    width: 79px;
+    height: 77px;
+    top: 179px;
+    position: absolute;
+    right: 54px;
+    cursor: pointer;
+    outline : none;
+    border : 0;
+    display:none;
+}
+a.csv-icon:hover {
+  padding: 2px;
+outline : none;
+    border : 0;
+}
+a.csv-icon:focus {outline:0;}
+
+@media only screen and (max-width: 500px) {
+
+a.csv-icon {
+    right: 6px;
+    top: 86px;
+}
+
+.sbmt-date span {
+    display: block;
+    padding: 2% 0;
+    text-align: center;
+}
+.frm-date {
+    width: 100%;
+}
+.to-date {
+    width: 100%;
+}
+
+.result-block table, thead, tbody, th, td, tr { 
+		display: block; 
+}
+.result-block table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+}
+.result-block table tr { 
+	border: 1px solid #ccc; 
+	padding: 2%;
+	margin-bottom: 2%;
+}
+.result-block table td { 
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 35% !important; 
+}
+.result-block table td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+}
+.result-block table td:nth-of-type(1):before { content: "No"; }
+	td:nth-of-type(2):before { content: "Page name"; }
+	td:nth-of-type(3):before { content: "URL"; }
+	td:nth-of-type(4):before { content: "Published Date"; }
+}
+.dwpl-main{
+      padding: 0% 3%;
+}
+.result-block.dwpl-output table{
+       padding: 1%;
+}
+
+
+}
